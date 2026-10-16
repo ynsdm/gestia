@@ -77,7 +77,7 @@
     </nav>
 
     <!-- Header / Hero de Talento Humano -->
-    <section class="relative pt-36 pb-16 md:pt-44 md:pb-24 overflow-hidden">
+    <section class="relative pt-36 pb-12 md:pt-44 md:pb-16 overflow-hidden">
         <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-900/30 via-slate-950 to-slate-950"></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
             <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-blue-950/80 text-blue-400 border border-blue-800/50 mb-6">
@@ -95,4 +95,189 @@
     <!-- Carta de Presentación Ejecutiva -->
     <section class="py-12 bg-slate-900/50 border-y border-slate-800/80">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="bg-gradient-to-br from-navy-800 to-slate-900 p-8 sm
+            <div class="bg-gradient-to-br from-navy-800 to-slate-900 p-8 sm:p-12 rounded-3xl border border-slate-800 shadow-2xl relative overflow-hidden">
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="w-20 h-20 bg-blue-900/60 border border-blue-500/40 rounded-2xl flex items-center justify-center text-blue-400 text-3xl shrink-0 shadow-lg shadow-blue-900/30">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold text-white mb-3">Carta de Presentación del Equipo</h2>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                            En <strong class="text-white">GRUPO GESTIA</strong>, creemos firmemente que la solidez de cualquier infraestructura tecnológica o modelo de negocio radica en las personas que lo hacen posible. Nuestro equipo combina un profundo entendimiento técnico en programación web y móvil con visiones estratégicas de administración, auditoría y control gerencial.
+                        </p>
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            Cada profesional que conforma nuestra organización está comprometido con estándares rigurosos de calidad, ética corporativa y soberanía tecnológica, brindando a nuestros clientes la tranquilidad de contar con aliados ejecutivos preparados para resolver cualquier reto.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cuadrícula de Integrantes del Equipo -->
+    <section id="equipo" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Directiva y Especialistas</h2>
+                <p class="mt-4 text-slate-400">Conozca a las mentes detrás del diseño, desarrollo y gestión de nuestras soluciones.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- 1. Diego Morales - Director General -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 hover:border-blue-500/50 transition group flex flex-col justify-between shadow-xl">
+                    <div>
+                        <div class="w-16 h-16 bg-blue-900/50 border border-blue-500/30 rounded-2xl flex items-center justify-center text-blue-400 text-2xl mb-6 group-hover:scale-110 transition duration-300">
+                            <i class="fa-solid fa-user-tie"></i>
+                        </div>
+                        <span class="text-xs font-bold uppercase tracking-wider text-blue-400">Dirección Ejecutiva</span>
+                        <h3 class="text-2xl font-bold text-white mt-1">Diego Morales</h3>
+                        <p class="text-xs text-slate-400 font-semibold mb-4">Director General</p>
+                        <p class="text-slate-300 text-xs leading-relaxed">
+                            Encargado de la visión estratégica, alianzas corporativas y toma de decisiones globales de GRUPO GESTIA, liderando la expansión de servicios web y consultoría.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs text-slate-400">
+                        <span><i class="fa-solid fa-shield-halved text-blue-400 mr-1"></i> Liderazgo</span>
+                        <span class="text-slate-500">GRUPO GESTIA</span>
+                    </div>
+                </div>
+
+                <!-- 2. Pablo - Director IT -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 hover:border-blue-500/50 transition group flex flex-col justify-between shadow-xl">
+                    <div>
+                        <div class="w-16 h-16 bg-blue-900/50 border border-blue-500/30 rounded-2xl flex items-center justify-center text-blue-400 text-2xl mb-6 group-hover:scale-110 transition duration-300">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+                        <span class="text-xs font-bold uppercase tracking-wider text-blue-400">Tecnología & Sistemas</span>
+                        <h3 class="text-2xl font-bold text-white mt-1">Pablo</h3>
+                        <p class="text-xs text-slate-400 font-semibold mb-4">Director IT</p>
+                        <p class="text-slate-300 text-xs leading-relaxed">
+                            Lidera la arquitectura de software, infraestructura de servidores, despliegue continuo (CI/CD) y estándares de seguridad para todas las apps y webs.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs text-slate-400">
+                        <span><i class="fa-solid fa-server text-blue-400 mr-1"></i> Infraestructura</span>
+                        <span class="text-slate-500">GRUPO GESTIA</span>
+                    </div>
+                </div>
+
+                <!-- 3. Gerente General -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 hover:border-blue-500/50 transition group flex flex-col justify-between shadow-xl">
+                    <div>
+                        <div class="w-16 h-16 bg-blue-900/50 border border-blue-500/30 rounded-2xl flex items-center justify-center text-blue-400 text-2xl mb-6 group-hover:scale-110 transition duration-300">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <span class="text-xs font-bold uppercase tracking-wider text-blue-400">Gestión Operativa</span>
+                        <h3 class="text-2xl font-bold text-white mt-1">Gerencia Operativa</h3>
+                        <p class="text-xs text-slate-400 font-semibold mb-4">Gerente General</p>
+                        <p class="text-slate-300 text-xs leading-relaxed">
+                            Coordina la ejecución de proyectos, gestión de recursos, tiempos de entrega y supervisión directa de la atención técnica a clientes corporativos.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs text-slate-400">
+                        <span><i class="fa-solid fa-list-check text-blue-400 mr-1"></i> Operaciones</span>
+                        <span class="text-slate-500">GRUPO GESTIA</span>
+                    </div>
+                </div>
+
+                <!-- 4. Administrador Experto -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 hover:border-blue-500/50 transition group flex flex-col justify-between shadow-xl">
+                    <div>
+                        <div class="w-16 h-16 bg-blue-900/50 border border-blue-500/30 rounded-2xl flex items-center justify-center text-blue-400 text-2xl mb-6 group-hover:scale-110 transition duration-300">
+                            <i class="fa-solid fa-vault"></i>
+                        </div>
+                        <span class="text-xs font-bold uppercase tracking-wider text-blue-400">Finanzas & Tesorería</span>
+                        <h3 class="text-2xl font-bold text-white mt-1">Administrador Experto</h3>
+                        <p class="text-xs text-slate-400 font-semibold mb-4">Especialista Financiero</p>
+                        <p class="text-slate-300 text-xs leading-relaxed">
+                            Diseña las estructuras administrativas, flujos de caja, control de facturación y modelado de datos contables para clientes e integración en software.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs text-slate-400">
+                        <span><i class="fa-solid fa-coins text-blue-400 mr-1"></i> Finanzas</span>
+                        <span class="text-slate-500">GRUPO GESTIA</span>
+                    </div>
+                </div>
+
+                <!-- 5. Programador Experto -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 hover:border-blue-500/50 transition group flex flex-col justify-between shadow-xl">
+                    <div>
+                        <div class="w-16 h-16 bg-blue-900/50 border border-blue-500/30 rounded-2xl flex items-center justify-center text-blue-400 text-2xl mb-6 group-hover:scale-110 transition duration-300">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <span class="text-xs font-bold uppercase tracking-wider text-blue-400">Desarrollo Senior</span>
+                        <h3 class="text-2xl font-bold text-white mt-1">Programador Experto</h3>
+                        <p class="text-xs text-slate-400 font-semibold mb-4">Senior Full-Stack Developer</p>
+                        <p class="text-slate-300 text-xs leading-relaxed">
+                            Especialista en código limpio, frameworks web modernos y desarrollo de aplicaciones móviles híbridas/nativas con alto rendimiento.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs text-slate-400">
+                        <span><i class="fa-solid fa-layer-group text-blue-400 mr-1"></i> Full-Stack</span>
+                        <span class="text-slate-500">GRUPO GESTIA</span>
+                    </div>
+                </div>
+
+                <!-- 6. Auditor Experto -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 hover:border-blue-500/50 transition group flex flex-col justify-between shadow-xl">
+                    <div>
+                        <div class="w-16 h-16 bg-blue-900/50 border border-blue-500/30 rounded-2xl flex items-center justify-center text-blue-400 text-2xl mb-6 group-hover:scale-110 transition duration-300">
+                            <i class="fa-solid fa-file-contract"></i>
+                        </div>
+                        <span class="text-xs font-bold uppercase tracking-wider text-blue-400">Control & Calidad</span>
+                        <h3 class="text-2xl font-bold text-white mt-1">Auditor Experto</h3>
+                        <p class="text-xs text-slate-400 font-semibold mb-4">Auditor de Procesos & Seguridad</p>
+                        <p class="text-slate-300 text-xs leading-relaxed">
+                            Supervisa el cumplimiento de políticas de confidencialidad, auditoría interna de bases de datos y control de calidad QA en cada entrega tecnológica.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs text-slate-400">
+                        <span><i class="fa-solid fa-square-check text-blue-400 mr-1"></i> Control QA</span>
+                        <span class="text-slate-500">GRUPO GESTIA</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner CTA -->
+    <section class="py-16 bg-slate-900/50 border-t border-slate-800/80">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-white">¿Desea trabajar con nuestro equipo?</h2>
+            <p class="text-slate-400 text-sm mt-3 max-w-xl mx-auto">
+                Inicie su proyecto tecnológico de la mano de profesionales calificados y con respaldo corporativo directo.
+            </p>
+            <div class="mt-8">
+                <a href="../index.html#cotizacion" class="px-8 py-4 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-xl shadow-xl shadow-blue-600/30 transition">
+                    Contactar al Equipo
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy-950 border-t border-slate-800/80 py-12 text-slate-500 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 bg-blue-900 border border-blue-500/30 rounded-lg flex items-center justify-center font-bold text-sm text-white">
+                    GG
+                </div>
+                <span class="font-bold text-slate-200">GRUPO GESTIA</span>
+            </div>
+            <p>© 2026 GRUPO GESTIA. Tecnología & Administración Corporativa. Maracaibo, Zulia, Venezuela 🇻🇪</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Toggle Menú Móvil
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
