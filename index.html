@@ -43,6 +43,73 @@
 </head>
 <body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-blue-600 selection:text-white relative">
 
+    <!-- MODAL ANUNCIO: PROYECTO KATARIS ERP -->
+    <div id="kataris-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-md opacity-0 pointer-events-none transition-opacity duration-300">
+        <div class="bg-slate-900 border border-blue-500/30 rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl shadow-blue-600/20 relative transform scale-95 transition-transform duration-300" id="kataris-modal-content">
+            
+            <!-- Botón de Cerrar (X) -->
+            <button id="close-modal-x" class="absolute top-4 right-4 w-9 h-9 bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-white rounded-full flex items-center justify-center transition">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+
+            <!-- Encabezado / Badge -->
+            <div class="flex items-center gap-2 mb-4">
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-blue-950 text-blue-400 border border-blue-800/60">
+                    <span class="w-2 h-2 rounded-full bg-blue-400 animate-pulse"></span>
+                    NUEVO DESARROLLO EN CURSO
+                </span>
+            </div>
+
+            <!-- Título & Subtítulo -->
+            <div class="flex items-center gap-3 mb-3">
+                <div class="w-12 h-12 bg-blue-600/20 text-blue-400 border border-blue-500/30 rounded-2xl flex items-center justify-center text-2xl shrink-0">
+                    <i class="fa-solid fa-cubes-stacked"></i>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-extrabold text-white leading-tight">Proyecto KATARIS</h3>
+                    <p class="text-xs text-blue-400 font-semibold tracking-wide uppercase">Sistema ERP Modular en la Nube</p>
+                </div>
+            </div>
+
+            <!-- Descripción -->
+            <p class="text-slate-300 text-sm leading-relaxed mb-5">
+                Estamos desarrollando una **plataforma ERP web de última generación** diseñada para transformar la gestión de empresas de todo tipo. Un sistema intuitivo, rápido y modular que se adapta al ritmo de tu negocio.
+            </p>
+
+            <!-- Características destacadas -->
+            <div class="grid grid-cols-2 gap-2.5 bg-slate-950/60 p-3.5 rounded-2xl border border-slate-800/80 mb-6 text-xs text-slate-300">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-check text-blue-400"></i>
+                    <span>Módulos a la medida</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-check text-blue-400"></i>
+                    <span>Inventario & Materia Prima</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-check text-blue-400"></i>
+                    <span>GPS & Logística para choferes</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-check text-blue-400"></i>
+                    <span>Dashboards Financieros</span>
+                </div>
+            </div>
+
+            <!-- Botones de Acción -->
+            <div class="flex flex-col sm:flex-row gap-3">
+            
+                <a href="proyecto" class="flex-1 py-3 px-5 bg-blue-600 hover:bg-blue-500 text-white font-bold text-sm rounded-xl shadow-lg shadow-blue-600/30 text-center transition flex items-center justify-center gap-2">
+                    <span>Leer más detalles</span>
+                    <i class="fa-solid fa-arrow-right text-xs"></i>
+                </a>
+                <button id="close-modal-btn" class="py-3 px-5 bg-slate-800 hover:bg-slate-700 text-slate-300 font-semibold text-sm rounded-xl text-center transition">
+                    Continuar al sitio
+                </button>
+            </div>
+        </div>
+    </div>
+
     <!-- Botón Flotante de WhatsApp -->
     <a href="https://wa.me/584128237598?text=Hola%20KATARIS,%20quisiera%20solicitar%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20software%20y%20gesti%C3%B3n." 
        target="_blank" 
@@ -677,6 +744,39 @@
         const mobileMenu = document.getElementById('mobile-menu');
         menuBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
+        });
+
+        // Lógica para Abrir/Cerrar Modal Emergente
+        const modal = document.getElementById('kataris-modal');
+        const modalContent = document.getElementById('kataris-modal-content');
+        const closeModalBtn = document.getElementById('close-modal-btn');
+        const closeModalX = document.getElementById('close-modal-x');
+
+        function openModal() {
+            modal.classList.remove('opacity-0', 'pointer-events-none');
+            modalContent.classList.remove('scale-95');
+            modalContent.classList.add('scale-100');
+        }
+
+        function closeModal() {
+            modal.classList.add('opacity-0', 'pointer-events-none');
+            modalContent.classList.remove('scale-100');
+            modalContent.classList.add('scale-95');
+        }
+
+        // Abrir automáticamente al cargar la página tras 400ms para efecto suave
+        window.addEventListener('load', () => {
+            setTimeout(openModal, 400);
+        });
+
+        closeModalBtn.addEventListener('click', closeModal);
+        closeModalX.addEventListener('click', closeModal);
+
+        // Cerrar al hacer clic fuera del contenido del modal
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                closeModal();
+            }
         });
     </script>
 </body>
