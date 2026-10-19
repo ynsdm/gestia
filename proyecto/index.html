@@ -65,7 +65,7 @@
                     <a href="/" class="text-slate-300 hover:text-blue-400 transition"><i class="fa-solid fa-arrow-left mr-1"></i> Volver al Inicio</a>
                     <a href="#modulos" class="text-slate-300 hover:text-blue-400 transition">Módulos</a>
                     <a href="#beneficios-vip" class="text-blue-400 font-semibold transition">Beneficios VIP</a>
-                    <a href="#caracteristicas" class="text-slate-300 hover:text-blue-400 transition">Características</a>
+                    <a href="#industrias" class="text-slate-300 hover:text-blue-400 transition">Industrias</a>
                     <a href="#faq" class="text-slate-300 hover:text-blue-400 transition">FAQ</a>
                     <a href="#lanzamiento" class="text-slate-300 hover:text-blue-400 transition">Lanzamiento 2027</a>
                     <a href="/#cotizacion" class="px-5 py-2.5 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-lg shadow-lg shadow-blue-600/30 transition transform hover:-translate-y-0.5">
@@ -87,7 +87,7 @@
             <a href="/" class="block text-slate-300 hover:text-blue-400 py-2"><i class="fa-solid fa-arrow-left mr-1"></i> Volver al Inicio</a>
             <a href="#modulos" class="block text-slate-300 hover:text-blue-400 py-2">Módulos</a>
             <a href="#beneficios-vip" class="block text-blue-400 font-semibold py-2">Beneficios VIP</a>
-            <a href="#caracteristicas" class="block text-slate-300 hover:text-blue-400 py-2">Características</a>
+            <a href="#industrias" class="block text-slate-300 hover:text-blue-400 py-2">Industrias</a>
             <a href="#faq" class="block text-slate-300 hover:text-blue-400 py-2">FAQ</a>
             <a href="#lanzamiento" class="block text-slate-300 hover:text-blue-400 py-2">Lanzamiento 2027</a>
             <a href="/#cotizacion" class="block w-full text-center px-5 py-2.5 bg-blue-600 text-white font-semibold rounded-lg">Apartar Acceso VIP</a>
@@ -108,6 +108,32 @@
             <p class="mt-6 text-lg sm:text-xl text-slate-400 max-w-3xl mx-auto font-light leading-relaxed">
                 Olvídate de sistemas rígidos y complejos. <strong class="text-white">KATARIS</strong> unifica facturación, inventario avanzado, GPS en tiempo real para flotas, contabilidad y control multiempresa en una interfaz ultrarrápida y amigable.
             </p>
+
+            <!-- CUENTA REGRESIVA INTERACTIVA (COUNTDOWN) -->
+            <div class="mt-12 max-w-2xl mx-auto bg-slate-900/80 border border-blue-500/30 p-6 rounded-3xl shadow-2xl backdrop-blur-md">
+                <div class="text-xs font-semibold uppercase tracking-widest text-blue-400 mb-4">
+                    <i class="fa-solid fa-clock-rotate-left"></i> Tiempo restante para el gran lanzamiento (Agosto 2027)
+                </div>
+                <div id="countdown" class="grid grid-cols-4 gap-3 text-center">
+                    <div class="bg-slate-950 p-3 rounded-xl border border-slate-800">
+                        <span id="days" class="text-2xl sm:text-3xl font-extrabold text-white">00</span>
+                        <span class="block text-[10px] uppercase text-slate-400 mt-1">Días</span>
+                    </div>
+                    <div class="bg-slate-950 p-3 rounded-xl border border-slate-800">
+                        <span id="hours" class="text-2xl sm:text-3xl font-extrabold text-white">00</span>
+                        <span class="block text-[10px] uppercase text-slate-400 mt-1">Horas</span>
+                    </div>
+                    <div class="bg-slate-950 p-3 rounded-xl border border-slate-800">
+                        <span id="minutes" class="text-2xl sm:text-3xl font-extrabold text-white">00</span>
+                        <span class="block text-[10px] uppercase text-slate-400 mt-1">Minutos</span>
+                    </div>
+                    <div class="bg-slate-950 p-3 rounded-xl border border-slate-800">
+                        <span id="seconds" class="text-2xl sm:text-3xl font-extrabold text-blue-400">00</span>
+                        <span class="block text-[10px] uppercase text-slate-400 mt-1">Segundos</span>
+                    </div>
+                </div>
+            </div>
+
             <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <a href="#modulos" class="w-full sm:w-auto px-8 py-4 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-xl shadow-xl shadow-blue-600/30 transition transform hover:-translate-y-0.5">
                     Explorar Módulos
@@ -394,8 +420,68 @@
         </div>
     </section>
 
+    <!-- NUEVA SECCIÓN: CASOS DE USO POR INDUSTRIA -->
+    <section id="industrias" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-blue-950 text-blue-400 border border-blue-800/50 mb-3">
+                    Adaptabilidad Sectorial
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">¿Cómo se adapta KATARIS ERP a tu tipo de negocio?</h2>
+                <p class="mt-4 text-slate-400">Diseñado con la flexibilidad necesaria para potenciar operaciones comerciales de diversas industrias.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Industria 1 -->
+                <div class="bg-slate-900 border border-slate-800 p-8 rounded-2xl hover:border-blue-500/50 transition">
+                    <div class="w-14 h-14 bg-blue-600/20 text-blue-400 rounded-2xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-shop"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Comercio & Retail</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Ideal para tiendas físicas y virtuales que requieren control riguroso de cajas, facturación rápida, múltiples monedas y manejo ágil de stock al detal.
+                    </p>
+                    <ul class="space-y-2 text-xs text-slate-300 border-t border-slate-800 pt-4">
+                        <li><i class="fa-solid fa-check text-blue-400 mr-2"></i> Control de caja diario sin cuadres erróneos</li>
+                        <li><i class="fa-solid fa-check text-blue-400 mr-2"></i> Gestión de múltiples divisas</li>
+                    </ul>
+                </div>
+
+                <!-- Industria 2 -->
+                <div class="bg-slate-900 border border-slate-800 p-8 rounded-2xl hover:border-blue-500/50 transition">
+                    <div class="w-14 h-14 bg-amber-600/20 text-amber-400 rounded-2xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-truck-fast"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Distribución & Mayoristas</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Diseñado para mayoristas con flotas de reparto en calle. Unifica el inventario central con el seguimiento GPS de choferes y rutas de entrega.
+                    </p>
+                    <ul class="space-y-2 text-xs text-slate-300 border-t border-slate-800 pt-4">
+                        <li><i class="fa-solid fa-check text-amber-400 mr-2"></i> Rastreo satelital en vivo para despachos</li>
+                        <li><i class="fa-solid fa-check text-amber-400 mr-2"></i> Cuentas por cobrar y control de créditos</li>
+                    </ul>
+                </div>
+
+                <!-- Industria 3 -->
+                <div class="bg-slate-900 border border-slate-800 p-8 rounded-2xl hover:border-blue-500/50 transition">
+                    <div class="w-14 h-14 bg-emerald-600/20 text-emerald-400 rounded-2xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-industry"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Producción & Alimentos</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Perfecto para procesadoras o distribuidoras que manejan transformación de insumos, control estricto por lotes y fechas de caducidad.
+                    </p>
+                    <ul class="space-y-2 text-xs text-slate-300 border-t border-slate-800 pt-4">
+                        <li><i class="fa-solid fa-check text-emerald-400 mr-2"></i> Fórmulas de producción y materia prima</li>
+                        <li><i class="fa-solid fa-check text-emerald-400 mr-2"></i> Alertas automáticas de vencimiento</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- LLAMADO A LA ACCIÓN (CTA) INTERMEDIO -->
-    <section class="py-16 bg-gradient-to-r from-blue-900/40 via-slate-900 to-blue-950/40 border-b border-blue-500/20">
+    <section class="py-16 bg-gradient-to-r from-blue-900/40 via-slate-900 to-blue-950/40 border-y border-blue-500/20">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 class="text-2xl sm:text-3xl font-extrabold text-white mb-4">¿Tienes dudas sobre si se adapta a los procesos específicos de tu empresa?</h2>
             <p class="text-slate-300 text-sm sm:text-base max-w-2xl mx-auto mb-8 leading-relaxed">
@@ -412,12 +498,12 @@
         </div>
     </section>
 
-    <!-- Sección: Características Clave (Por qué elegir Kataris ERP) -->
+    <!-- Sección: Características Clave & Requisitos Cloud -->
     <section id="caracteristicas" class="py-20 bg-slate-900/50 border-b border-slate-800/80">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">¿Por qué KATARIS ERP superará a la competencia?</h2>
-                <p class="mt-4 text-slate-400">Diseñado con tecnología de punta para ofrecer velocidad, soberanía de datos y facilidad de uso inigualable.</p>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Tecnología Cloud Segura y Confiable</h2>
+                <p class="mt-4 text-slate-400">Diseñado con altos estándares para ofrecer velocidad, soberanía de datos y tranquilidad operativa total.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -433,19 +519,19 @@
                 <!-- Característica 2 -->
                 <div class="bg-slate-900 p-8 rounded-2xl border border-slate-800 hover:border-blue-500/50 transition">
                     <div class="w-12 h-12 bg-blue-600/20 text-blue-400 rounded-xl flex items-center justify-center mb-6">
-                        <i class="fa-solid fa-sliders text-2xl"></i>
+                        <i class="fa-solid fa-server text-2xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Personalización Total</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">Instalación y configuración a la medida de los procesos específicos de tu empresa, sin depender de costosos consultores externos.</p>
+                    <h3 class="text-xl font-bold text-white mb-3">Respaldos Automáticos Diario</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Tus bases de datos corporativas e inventarios se replican y respaldan de forma automatizada en la nube bajo estrictas políticas de seguridad.</p>
                 </div>
 
                 <!-- Característica 3 -->
                 <div class="bg-slate-900 p-8 rounded-2xl border border-slate-800 hover:border-blue-500/50 transition">
                     <div class="w-12 h-12 bg-blue-600/20 text-blue-400 rounded-xl flex items-center justify-center mb-6">
-                        <i class="fa-solid fa-shield-halved text-2xl"></i>
+                        <i class="fa-solid fa-laptop-mobile text-2xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Seguridad y Respaldo Cloud</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">Tus datos financieros y de inventario resguardados con encriptación de nivel bancario y respaldos automáticos diarios en la nube.</p>
+                    <h3 class="text-xl font-bold text-white mb-3">Multiplataforma</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Accede desde computadoras, tablets o teléfonos inteligentes con interfaces adaptadas que facilitan la gerencia desde cualquier lugar.</p>
                 </div>
             </div>
         </div>
@@ -558,6 +644,32 @@
         menuBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
+
+        // Script de Cuenta Regresiva (Countdown para Agosto de 2027)
+        const launchDate = new Date("August 1, 2027 00:00:00").getTime();
+
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const distance = launchDate - now;
+
+            if (distance < 0) {
+                document.getElementById("countdown").innerHTML = "<div class='col-span-4 text-center font-bold text-emerald-400'>¡KATARIS ERP YA ESTÁ DISPONIBLE!</div>";
+                return;
+            }
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("days").innerText = String(days).padStart(2, '0');
+            document.getElementById("hours").innerText = String(hours).padStart(2, '0');
+            document.getElementById("minutes").innerText = String(minutes).padStart(2, '0');
+            document.getElementById("seconds").innerText = String(seconds).padStart(2, '0');
+        }
+
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
     </script>
 </body>
 </html>
